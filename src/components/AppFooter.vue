@@ -1,0 +1,137 @@
+<template>
+  <div>
+    <div class="headfooter">
+      <Logo />
+      <hr />
+      <div class="virtual">
+        <span class="icon">
+          <HeadFooter_icon1 class="svg" />
+        </span>
+        <span class="icon">
+          <HeadFooter_icon2 class="svg" />
+        </span>
+        <span class="icon">
+          <HeadFooter_icon3 class="svg" />
+        </span>
+      </div>
+    </div>
+    <div class="footer_adderes">
+      <div class="about">
+        <h3 class="text-lg text-black font-bold pb-5 opacity-80">
+          درباره راکت
+        </h3>
+        <p class="pt-2 opacity-50">
+          راکت یکی از پرتلاش‌ترین و بروزترین وبسایت های آموزشی در سطح ایران است
+          که همیشه تلاش کرده تا بتواند جدیدترین و بروزترین مقالات و دوره‌های
+          آموزشی را در اختیار علاقه‌مندان ایرانی قرار دهد. تبدیل کردن برنامه
+          نویسان ایرانی به بهترین برنامه نویسان جهان هدف ماست.
+        </p>
+        <a
+          class="text-blue-500 transition-all cursor-pointer hover:text-black"
+          href="##"
+        >
+          مشاهده اطلاعات مسیریادگیری
+        </a>
+      </div>
+      <div class="footer_sections_site">
+        <h3 class="text-lg text-black font-bold pb-5 opacity-80">
+          بخش های سایت
+        </h3>
+        <ul class="flex flex-col gap-3 p-2">
+          <a
+            class="hover:text-black hover:opacity-90 opacity-50 transition-all"
+            href=""
+            >قوانین و مقررات</a
+          >
+          <a
+            class="hover:text-black hover:opacity-90 opacity-50 transition-all"
+            href=""
+            >مدرسان راکت</a
+          >
+          <a
+            class="hover:text-black hover:opacity-90 opacity-50 transition-all"
+            href=""
+            >درباره راکت</a
+          >
+          <a
+            class="hover:text-black hover:opacity-90 opacity-50 transition-all"
+            href=""
+            >ارتباط با ما</a
+          >
+        </ul>
+      </div>
+      <div class="footer_contactUs flex flex-col gap-3">
+        <h3 class="text-lg text-black font-bold pb-5 opacity-80">
+          ارتباط با ما
+        </h3>
+        <p class="opacity-50">ایمیل</p>
+        <p class="opacity-50">تلگرام</p>
+        <p class="opacity-50">شماره تماس</p>
+      </div>
+      <div class="footer-number pr-20">
+        <h3></h3>
+        <ul class="list-none flex flex-col gap-3">
+          <a
+            class="hover:text-black hover:opacity-90 opacity-50 transition-all"
+            href=""
+            >info@roocket.ir</a
+          >
+          <a
+            class="hover:text-black hover:opacity-90 opacity-50 transition-all"
+            href=""
+            >roocket-support</a
+          >
+          <a
+            class="hover:text-black hover:opacity-90 opacity-50 transition-all"
+            href=""
+            >01144422101</a
+          >
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import Logo from "./Logo.vue";
+import HeadFooter_icon1 from "./HeadFooter_icon1.vue";
+import HeadFooter_icon2 from "./HeadFooter_icon2.vue";
+import HeadFooter_icon3 from "./HeadFooter_icon3.vue";
+export default {
+  name: "Footer",
+  components: {
+    Logo,
+    HeadFooter_icon1,
+    HeadFooter_icon2,
+    HeadFooter_icon3,
+  },
+};
+</script>
+<style scoped>
+.headfooter {
+  @apply mx-40 mt-40 flex justify-between items-center;
+}
+.virtual {
+  @apply flex  gap-4 items-center;
+}
+.icon {
+  @apply bg-blue-100  py-3 px-3 transition duration-100 cursor-pointer rounded-md hover:bg-blue-500;
+}
+.icon:hover svg {
+  fill: white;
+}
+.footer_adderes {
+  @apply mt-8 flex justify-between mx-40;
+}
+.about {
+  @apply w-1/3;
+}
+.footer_sections_site {
+  @apply w-64 text-center flex flex-col;
+}
+.footer_contactUs {
+  @apply w-64 text-center;
+}
+.footer-number {
+  @apply w-64 pl-12 flex flex-col pt-14;
+}
+</style>
