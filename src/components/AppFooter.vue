@@ -48,11 +48,12 @@
             href=""
             >مدرسان راکت</a
           >
-          <a
+          <router-link
+            to="/list"
             class="hover:text-black hover:opacity-90 opacity-50 transition-all"
-            href=""
-            >درباره راکت</a
+            >درباره راکت</router-link
           >
+
           <a
             class="hover:text-black hover:opacity-90 opacity-50 transition-all"
             href=""

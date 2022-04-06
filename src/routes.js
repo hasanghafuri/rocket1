@@ -4,6 +4,7 @@ import Signin from "./views/Signin"
 import HeroSectionRedirect from "./views/HeroSectionRedirect"
 import CardSingle from "./views/CardSingle"
 import CheckBox from "./views/CheckBox"
+import list from "./views/list"
 
 export default [
     { path: '/', component: Home },
@@ -11,6 +12,7 @@ export default [
     { path: '/Signin', component: Signin },
     { path: "/HeroSectionRedirect", component: HeroSectionRedirect },
     { path: "/CardSingle/:id,", name: 'CardSinglePageRoute', component: CardSingle },
-    { path: "/CheckBox", component: CheckBox }
+    { path: "/CheckBox", component: CheckBox },
+    { path: "/list", component: list }
 ]
 

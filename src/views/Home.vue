@@ -7,6 +7,7 @@
     <AppLearning :cards="maxcards" />
     <Comment />
     <AppSection5 :cards="cardsection5" />
+    <AppFooter />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import AppCourses from "@/components/AppCourses.vue";
 import AppLearning from "@/components/AppLearning";
 import Comment from "@/components/Comment.vue";
 import AppSection5 from "@/components/AppSection5.vue";
+import AppFooter from "@/components/AppFooter";
 
 export default {
   name: "App",
@@ -29,6 +31,7 @@ export default {
     AppLearning,
     Comment,
     AppSection5,
+    AppFooter,
   },
   data() {
     return {
