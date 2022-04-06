@@ -38,7 +38,7 @@
       </ul>
     </div>
     <AppHeaderPopAboutUs :open="open" @closed="closedpop" />
-    <AppHeaderPopupCourse :openpop="openpop" @closedpop="closed" />
+    <AppHeaderPopupCourse :openpop="openpop" @closedpop2="closed" />
   </div>
 </template>
 <script>

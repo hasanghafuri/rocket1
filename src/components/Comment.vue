@@ -1,0 +1,60 @@
+<template>
+  <div>
+    <div class="content relative">
+      <div class="subject">
+        <div class="title">
+          <AppCourseIcon />
+          <h1 class="text-4xl font-extrabold opacity-90">
+            در مورد راکت چه میشنویم؟
+          </h1>
+        </div>
+        <p class="opacity-50 pt-7">
+          این‌ها، بخش خیلی کوچکی از نظراتی هستند که افراد مختلف در مورد راکت
+          دارند.
+        </p>
+        <div class="flex mt-6 gap-4">
+          <span class="cursor-pointer"> <section4_icon1 /> </span>
+          <span class="cursor-pointer"> <section4_icon2 /> </span>
+        </div>
+      </div>
+      <div class="card">
+        <p class="text-lg opacity-50 pt-10">
+          برنامه‌نویسی کارخانه‌ی تبدیل ایده به واقعیت است که با کمک آموزش‌های
+          جذاب و کاربردی راکت، میتوانید مالک این کارخانه باشید
+        </p>
+        <span class="pt-12 font-bold text-lg flex justify-center gap-1">
+          <img
+            class="w-12 h-12 rounded-full object-cover"
+            src="@/assets/image/7024.jpg/"
+            alt=""
+          />
+          حسن غفوری
+        </span>
+        <p class="text-sm opacity-30">developer</p>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import AppCourseIcon from "./AppCoursesIcon.vue";
+export default {
+  name: "Comment",
+  components: {
+    AppCourseIcon,
+  },
+};
+</script>
+<style scoped>
+.content {
+  @apply mx-40 mt-40 flex justify-between;
+}
+.subject {
+  @apply w-1/2;
+}
+.title {
+  @apply flex;
+}
+.card {
+  @apply w-1/2 bg-white py-10 px-10 text-center rounded-xl -mt-16;
+}
+</style>

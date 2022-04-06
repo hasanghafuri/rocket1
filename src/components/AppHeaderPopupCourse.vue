@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div @click.self="closed" v-show="openpop" class="AppHeader_pop2">
+    <div v-show="openpop" @click.self="closed" class="AppHeader_pop2">
       <div class="box1">
         <div class="list">
           <AppLogoPop2 />

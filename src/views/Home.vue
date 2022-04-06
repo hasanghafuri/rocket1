@@ -5,6 +5,8 @@
     <HeroSection />
     <AppCourses :cards="cards" />
     <AppLearning :cards="maxcards" />
+    <Comment />
+    <AppSection5 :cards="cardsection5" />
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import HeroSection from "@/components/HeroSection.vue";
 import PromotionBanner from "@/components/PromotionBanner.vue";
 import AppCourses from "@/components/AppCourses.vue";
 import AppLearning from "@/components/AppLearning";
+import Comment from "@/components/Comment.vue";
+import AppSection5 from "@/components/AppSection5.vue";
 
 export default {
   name: "App",
@@ -23,6 +27,8 @@ export default {
     PromotionBanner,
     AppCourses,
     AppLearning,
+    Comment,
+    AppSection5,
   },
   data() {
     return {
@@ -111,6 +117,45 @@ export default {
           mainsubject: `لاراول پر استفاده‌ترین فریمورک زبان برنامه نویسی PHP بوده و در سال‌های اخیر توسط شرکت‌ها و استارتاپ‌های بسیار زیادی مورد...`,
           footer: "مشاهده اطلاعات مسیریادگیری ",
           bg: "bg-red-500",
+        },
+      ],
+      cardsection5: [
+        {
+          id: 1,
+          image:
+            "https://static.roocket.ir/images/cover/2022/2/15/IKp1EZbte9k2VenO0JRA3UjmBty0A9T7ZoTjsCKh.jpg",
+          subtitle: "3 روش موثر برای ایجاد مهارت‌های برنامه نویسی",
+          maintitle: "حسن غفوری",
+          maintitle2: "developre",
+          margintop: "mb-10",
+        },
+        {
+          id: 2,
+          image:
+            "https://static.roocket.ir/images/cover/2022/2/15/1PTOuyKUkfN49YQLufpZJl2vVyrDDValLBS1Vovk.jpg",
+          subtitle: "5 پروژه برای مسلط شدن بر توسعه Frontend",
+          maintitle: "رامین",
+          maintitle2: "backend",
+          margintop: "mt-20",
+        },
+        {
+          id: 3,
+          image:
+            "https://static.roocket.ir/images/cover/2022/2/13/exHT7cHNeURc8srtKWbFEcmUIbZSqorqQLn302R1.jpg",
+          subtitle:
+            "چگونه کار خود را به عنوان یک توسعه دهنده وب فرانت-اند در سال 2022 شروع کنیم؟",
+          maintitle: "حسن غفوری",
+          maintitle2: "developre",
+          margintop: "-mt-10",
+        },
+        {
+          id: 4,
+          image:
+            "https://static.roocket.ir/images/cover/2022/2/15/10VnmdLDktnMhpE3GHCfG8NMixBXHIdbyduNmrW0.jpg",
+          subtitle: "گیت را در یک مطلب قورت بده! (۲)",
+          maintitle: "علی حمیدی",
+          maintitle2: "frontEnd",
+          margintop: " ",
         },
       ],
     };
