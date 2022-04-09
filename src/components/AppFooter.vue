@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="footer">
     <div class="headfooter">
       <Logo />
       <hr />
@@ -20,7 +20,7 @@
         <h3 class="text-lg text-black font-bold pb-5 opacity-80">
           درباره راکت
         </h3>
-        <p class="pt-2 opacity-50">
+        <p class="pharag pt-2 opacity-50">
           راکت یکی از پرتلاش‌ترین و بروزترین وبسایت های آموزشی در سطح ایران است
           که همیشه تلاش کرده تا بتواند جدیدترین و بروزترین مقالات و دوره‌های
           آموزشی را در اختیار علاقه‌مندان ایرانی قرار دهد. تبدیل کردن برنامه
@@ -39,7 +39,7 @@
         </h3>
         <ul class="flex flex-col gap-3 p-2">
           <a
-            class="hover:text-black hover:opacity-90 opacity-50 transition-all"
+            class="pharag hover:text-black hover:opacity-90 opacity-50 transition-all"
             href=""
             >قوانین و مقررات</a
           >
@@ -50,12 +50,12 @@
           >
           <router-link
             to="/list"
-            class="hover:text-black hover:opacity-90 opacity-50 transition-all"
+            class="pharag hover:text-black hover:opacity-90 opacity-50 transition-all"
             >درباره راکت</router-link
           >
 
           <a
-            class="hover:text-black hover:opacity-90 opacity-50 transition-all"
+            class="pharag hover:text-black hover:opacity-90 opacity-50 transition-all"
             href=""
             >ارتباط با ما</a
           >
@@ -65,9 +65,9 @@
         <h3 class="text-lg text-black font-bold pb-5 opacity-80">
           ارتباط با ما
         </h3>
-        <p class="opacity-50">ایمیل</p>
-        <p class="opacity-50">تلگرام</p>
-        <p class="opacity-50">شماره تماس</p>
+        <p class="pharag opacity-50">ایمیل</p>
+        <p class="pharag opacity-50">تلگرام</p>
+        <p class="pharag opacity-50">شماره تماس</p>
       </div>
       <div class="footer-number pr-20">
         <h3></h3>
@@ -109,7 +109,7 @@ export default {
 </script>
 <style scoped>
 .headfooter {
-  @apply mx-40 mt-40 flex justify-between items-center;
+  @apply mx-40 mt-60 gap-56 flex justify-between items-center;
 }
 .virtual {
   @apply flex  gap-4 items-center;
@@ -134,5 +134,49 @@ export default {
 }
 .footer-number {
   @apply w-64 pl-12 flex flex-col pt-14;
+}
+@media screen and (max-width: 1531px) {
+  .footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1401px) {
+  .footer_adderes {
+    margin-right: 3rem;
+  }
+  .footer {
+    width: 107%;
+  }
+  .headfooter {
+    margin-left: 12rem;
+    margin-right: 3rem;
+  }
+}
+@media screen and (max-width: 1291px) {
+  .footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .footer {
+    width: 100%;
+  }
+  .headfooter {
+    margin-left: 11rem;
+    margin-right: 3rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .footer {
+    width: 110%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .footer {
+    width: 100%;
+  }
+  .pharag {
+    font-size: small;
+  }
 }
 </style>

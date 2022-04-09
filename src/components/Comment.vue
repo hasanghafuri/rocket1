@@ -4,11 +4,11 @@
       <div class="subject">
         <div class="title">
           <AppCourseIcon />
-          <h1 class="text-4xl font-extrabold opacity-90">
+          <h1 class="h1 text-4xl font-extrabold opacity-90">
             در مورد راکت چه میشنویم؟
           </h1>
         </div>
-        <p class="opacity-50 pt-7">
+        <p class="p opacity-50 pt-7">
           این‌ها، بخش خیلی کوچکی از نظراتی هستند که افراد مختلف در مورد راکت
           دارند.
         </p>
@@ -56,5 +56,22 @@ export default {
 }
 .card {
   @apply w-1/2 bg-white py-10 px-10 text-center rounded-xl -mt-16;
+}
+@media screen and (max-width: 1100px) {
+  .h1 {
+    font-size: x-large;
+    font-weight: 600;
+  }
+  .p {
+    text-align: center;
+    width: 167%;
+  }
+  .card {
+    margin-top: 0rem;
+    width: 100%;
+  }
+  .content {
+    flex-direction: column;
+  }
 }
 </style>

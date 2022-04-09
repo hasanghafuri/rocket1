@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="full">
     <div @click="closedrop" v-show="showdrop" class="BackDrop"></div>
     <div class="AppHeader_search">
       <router-link to="/">
@@ -90,7 +90,7 @@ export default {
 }
 
 .AppHeader_search {
-  @apply flex justify-between w-full bg-white mt-3 rounded-xl h-36 items-center px-5 py-5;
+  @apply flex justify-between w-full  bg-white mt-3 rounded-xl h-36 items-center px-5 py-5;
 }
 .AppHeader_SearchBox {
   @apply w-2/4 relative;
@@ -113,7 +113,7 @@ export default {
   @apply bg-blue-500 text-white text-center px-3 py-2 w-20 outline-none rounded-lg cursor-pointer hover:bg-opacity-70;
 }
 .AppHeader_menu {
-  @apply bg-gray-300 py-5 px-6  w-11/12 m-auto h-20  rounded-br-xl rounded-bl-xl relative;
+  @apply bg-gray-300 py-5 px-6  w-11/12  h-20  rounded-br-xl rounded-bl-xl mr-16;
 }
 .Menu_list {
   @apply list-none flex items-center text-center justify-center gap-9 text-black opacity-80 transition-all;
@@ -126,5 +126,23 @@ export default {
 }
 .BackDrop {
   @apply w-full h-full fixed transition-opacity top-0 left-0 right-0 bottom-0 bg-gray-700  backdrop-filter isolate  z-30 opacity-70;
+}
+@media screen and (max-width: 1601px) {
+  .AppHeader_search {
+    width: 97%;
+    margin: 0px 0px;
+  }
+  .AppHeader_menu {
+    margin: 0px 34px;
+  }
+  .full {
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .Menu_list {
+    font-size: small;
+  }
 }
 </style>

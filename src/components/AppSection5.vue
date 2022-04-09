@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="relative">
+    <div class="bbb relative">
       <div class="content">
         <h1 class="title">از گوشه و اطراف دنیای برنامه‌نویسی</h1>
-        <p class="opacity-40 pt-4 w-2/5">
+        <p class="pharag opacity-40 pt-4 w-2/5">
           نوشتن کار جالبیه که از هزاران سال همراه ما بوده و کمک کرده تا همیشه به
           روز باشیم، ما در راکت فضای رو به شکلی آماده کردیم تا شما بتونید
           ایده‌ها و مطالب جالب حوزه برنامه‌نویسی رو در اختیار هزاران برنامه‌نویس
@@ -103,5 +103,59 @@ export default {
 }
 .footer {
   @apply flex justify-between items-center mt-3;
+}
+@media screen and (max-width: 1531px) {
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    position: absolute;
+    right: 650px;
+    top: -250px;
+    gap: 8px;
+  }
+  .content {
+    margin: 30% 3%;
+  }
+}
+@media screen and (max-width: 1531px) {
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 255px);
+    position: absolute;
+    right: 330px;
+    top: -250px;
+    gap: 8px;
+  }
+  .content {
+    width: 82%;
+  }
+  .bbb {
+    margin-right: 68px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    position: absolute;
+    right: 365px;
+    top: -250px;
+    gap: 8px;
+  }
+  .content {
+    margin: 30% 0%;
+    margin-top: 360px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .subtitle {
+    font-size: smaller;
+  }
+  .title {
+    font-size: larger;
+  }
+  .pharag {
+    font-size: smaller;
+  }
 }
 </style>

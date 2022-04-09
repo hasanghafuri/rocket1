@@ -1,7 +1,7 @@
 <template>
   <div class="herosection_content">
     <div class="content w-1/2">
-      <h1 class="title text-6xl opacity-80">
+      <h1 class="title text-5xl font-bold opacity-80">
         داستان برنامه‌نویس شدنت از اینجا شروع میشه!
       </h1>
       <p class="pharag opacity-50 text-2xl">
@@ -17,13 +17,13 @@
         >
       </span>
       <div class="content_footer">
-        <div class="footer1 flex gap-5">
-          <p class="text-2xl opacity-70">بیش از 80 دوره آموزشی</p>
-          <p class="text-2xl opacity-70">ضمانت بازگشت وجه</p>
+        <div class="footer1 flex gap-7">
+          <p class="link text-2xl opacity-60">بیش از 80 دوره آموزشی</p>
+          <p class="link text-2xl opacity-60">ضمانت بازگشت وجه</p>
         </div>
-        <div class="footer2 flex gap-5">
-          <p class="text-2xl opacity-70">یادگیری با تمرین و آزمون</p>
-          <p class="text-2xl opacity-70">پشتیبانی ۲۴ساعته</p>
+        <div class="footer2 flex gap-7">
+          <p class="link text-2xl opacity-60">یادگیری با تمرین و آزمون</p>
+          <p class="link text-2xl opacity-60">پشتیبانی ۲۴ساعته</p>
         </div>
       </div>
     </div>
@@ -40,12 +40,75 @@ export default {
 
 <style scoped>
 .herosection_content {
-  @apply flex max-w-full mt-52 mx-40 gap-24;
+  margin-top: 13rem;
+  display: flex;
+  width: 84%;
+  gap: 10rem;
+  margin-right: 10%;
 }
 .content {
   @apply w-1/2 flex flex-col gap-9;
 }
 .content_footer {
-  @apply flex flex-col  gap-11 mr-8 mt-4;
+  @apply flex flex-col   gap-11  mt-4;
+}
+.content_footer {
+  width: 120%;
+}
+.title {
+  width: 131%;
+}
+@media screen and (max-width: 1531px) {
+  .content_footer {
+    width: 150%;
+  }
+  .link {
+    font-size: larger;
+  }
+  .btn {
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 1291px) {
+  .title {
+    font-size: xx-large;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .herosection_content {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    gap: 2.25rem;
+  }
+  .image {
+    width: 80%;
+    text-align: center;
+    margin-right: 100px;
+  }
+  .content {
+    text-align: center;
+    margin-right: 125px;
+  }
+  .content_footer {
+    margin-right: 107px;
+  }
+  .pharag {
+    text-align: justify;
+  }
+  .btn {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .pharag {
+    font-size: small;
+  }
+  .footer2 {
+    font-size: small;
+  }
+  .footer1 {
+    font-size: small;
+  }
 }
 </style>

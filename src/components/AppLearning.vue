@@ -3,7 +3,7 @@
     <div class="subtitle">
       <div class="flex items-center">
         <AppCoursesIcon />
-        <h1 class="text-4xl opacity-80 font-extrabold">مسیر های یادگیری</h1>
+        <h1 class="h1 text-4xl opacity-80 font-extrabold">مسیر های یادگیری</h1>
       </div>
       <p
         class="opacity-50 text-lg hover:text-black cursor-pointer transition-opacity"
@@ -93,5 +93,31 @@ export default {
 }
 .footer {
   @apply text-blue-500 opacity-80 hover:text-black transition-colors font-bold cursor-pointer py-5  w-full;
+}
+@media screen and (max-width: 1290px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .cards {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .cards {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .cards {
+    width: 94%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .h1 {
+    font-size: x-large;
+  }
 }
 </style>

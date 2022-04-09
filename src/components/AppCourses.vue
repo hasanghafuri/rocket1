@@ -3,7 +3,7 @@
     <div class="subtitle">
       <div class="flex items-center">
         <AppCoursesIcon />
-        <h1 class="text-4xl opacity-80 font-extrabold">جدید ترین دوره ها</h1>
+        <h1 class="h1 text-4xl opacity-80 font-extrabold">جدید ترین دوره ها</h1>
       </div>
       <p
         class="opacity-50 text-lg hover:text-black cursor-pointer transition-opacity"
@@ -73,7 +73,7 @@ export default {
 </script>
 <style scoped>
 .subtitle {
-  @apply mt-60 mx-40 flex justify-between items-center max-w-full;
+  @apply mt-48 mx-40 flex justify-between items-center max-w-full;
 }
 .cards {
   @apply bg-white rounded-lg relative px-4 py-4;
@@ -108,6 +108,42 @@ export default {
   @apply mt-4 border-t text-center h-12 py-4 transition-colors;
 }
 .cards {
-  width: 24%;
+  width: 23%;
+}
+@media screen and (max-width: 1601px) {
+  #main:before {
+    top: 169px;
+  }
+}
+@media screen and (max-width: 1532px) {
+  #main:before {
+    top: 182px;
+  }
+  .content {
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+  .cards {
+    width: 34%;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .cards {
+    width: 44%;
+  }
+  #main:before {
+    top: 226px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .h1 {
+    font-size: x-large;
+  }
+  .cards {
+    width: 55%;
+  }
 }
 </style>

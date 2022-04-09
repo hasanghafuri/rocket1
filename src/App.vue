@@ -29,4 +29,9 @@ input {
   max-width: 1024px;
   margin: 0px 150px;
 }
+@media screen and (max-width: 1601px) {
+  .container {
+    margin: 0px 0px;
+  }
+}
 </style>
