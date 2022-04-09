@@ -157,5 +157,7 @@ export default {
   .pharag {
     font-size: smaller;
   }
+  @media screen and (max-width: 1000px) {
+  }
 }
 </style>

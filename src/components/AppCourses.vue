@@ -2,11 +2,11 @@
   <div>
     <div class="subtitle">
       <div class="flex items-center">
-        <AppCoursesIcon />
+        <AppCoursesIcon class="icon" />
         <h1 class="h1 text-4xl opacity-80 font-extrabold">جدید ترین دوره ها</h1>
       </div>
       <p
-        class="opacity-50 text-lg hover:text-black cursor-pointer transition-opacity"
+        class="p opacity-50 text-lg hover:text-black cursor-pointer transition-opacity"
       >
         مشاهده همه دوره‌ها
       </p>
@@ -144,6 +144,26 @@ export default {
   }
   .cards {
     width: 55%;
+  }
+  @media screen and (max-width: 1000px) {
+    .h1 {
+      font-size: large;
+    }
+  }
+  .cards {
+    width: 70%;
+  }
+  .p {
+    font-size: medium;
+  }
+  .icon {
+    width: 30;
+  }
+  .content {
+    width: 60%;
+  }
+  #main:before {
+    top: 192px;
   }
 }
 </style>

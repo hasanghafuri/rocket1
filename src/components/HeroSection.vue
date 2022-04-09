@@ -111,4 +111,26 @@ export default {
     font-size: small;
   }
 }
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: x-large;
+  }
+  .pharag {
+    font-size: small;
+    margin-right: 20px;
+  }
+  .content {
+    margin-right: 124px;
+  }
+  .btn {
+    margin-left: 94px;
+    padding: 3px 8px;
+  }
+  .image {
+    width: 90%;
+  }
+  .content_footer {
+    margin-right: 27px;
+  }
+}
 </style>

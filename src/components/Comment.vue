@@ -3,7 +3,7 @@
     <div class="content relative">
       <div class="subject">
         <div class="title">
-          <AppCourseIcon />
+          <AppCourseIcon class="icon" />
           <h1 class="h1 text-4xl font-extrabold opacity-90">
             در مورد راکت چه میشنویم؟
           </h1>
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="card">
-        <p class="text-lg opacity-50 pt-10">
+        <p class="pharag text-lg opacity-50 pt-10">
           برنامه‌نویسی کارخانه‌ی تبدیل ایده به واقعیت است که با کمک آموزش‌های
           جذاب و کاربردی راکت، میتوانید مالک این کارخانه باشید
         </p>
@@ -72,6 +72,28 @@ export default {
   }
   .content {
     flex-direction: column;
+  }
+  @media screen and (max-width: 1000px) {
+    .subject {
+      width: 60%;
+    }
+  }
+  .h1 {
+    font-size: large;
+  }
+  .icon {
+    width: 30;
+  }
+  .p {
+    width: 160%;
+    font-size: smaller;
+  }
+  .card {
+    padding: 10px 11px;
+    width: 100%;
+  }
+  .pharag {
+    font-size: smaller;
   }
 }
 </style>

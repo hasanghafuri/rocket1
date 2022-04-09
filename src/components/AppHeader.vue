@@ -145,4 +145,22 @@ export default {
     font-size: small;
   }
 }
+@media screen and (max-width: 1000px) {
+  .AppHeader_search {
+    flex-direction: column;
+    height: 180px;
+  }
+  .AppHeader_SearchBox {
+    margin-top: 5px;
+  }
+  .AppHeader--Login {
+    margin-top: 10px;
+  }
+  .AppHeader_menu {
+    margin: 0px 15px;
+  }
+  .Menu_list {
+    gap: 1.25rem;
+  }
+}
 </style>

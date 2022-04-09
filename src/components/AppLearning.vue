@@ -2,11 +2,11 @@
   <div>
     <div class="subtitle">
       <div class="flex items-center">
-        <AppCoursesIcon />
+        <AppCoursesIcon class="icon" />
         <h1 class="h1 text-4xl opacity-80 font-extrabold">مسیر های یادگیری</h1>
       </div>
       <p
-        class="opacity-50 text-lg hover:text-black cursor-pointer transition-opacity"
+        class="p opacity-50 text-lg hover:text-black cursor-pointer transition-opacity"
       >
         مشاهده همه مسیرهای یادگیری
       </p>
@@ -118,6 +118,27 @@ export default {
 @media screen and (max-width: 1100px) {
   .h1 {
     font-size: x-large;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .subtitle {
+    margin-left: 8rem;
+    margin-right: 9rem;
+  }
+  .icon {
+    width: 30;
+  }
+  .h1 {
+    font-size: large;
+  }
+  .p {
+    font-size: medium;
+  }
+  .cards {
+    width: 70%;
+  }
+  .content {
+    width: 65%;
   }
 }
 </style>
