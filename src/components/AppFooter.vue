@@ -27,7 +27,7 @@
           نویسان ایرانی به بهترین برنامه نویسان جهان هدف ماست.
         </p>
         <a
-          class="text-blue-500 transition-all cursor-pointer hover:text-black"
+          class="link text-blue-500 transition-all cursor-pointer hover:text-black"
           href="##"
         >
           مشاهده اطلاعات مسیریادگیری
@@ -171,12 +171,40 @@ export default {
     width: 110%;
   }
 }
+@media screen and (max-width: 1020px) {
+  .footer_adderes {
+    width: 100%;
+  }
+  .pharag {
+    width: 100%;
+  }
+  .headfooter {
+    margin-left: -5rem;
+    margin-right: 3rem;
+  }
+}
 @media screen and (max-width: 1100px) {
   .footer {
     width: 100%;
   }
   .pharag {
     font-size: small;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .link {
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 900px) {
+  .headfooter {
+    margin-left: -1rem;
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 830px) {
+  .footer_adderes {
+    width: 80%;
   }
 }
 </style>

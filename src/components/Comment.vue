@@ -73,27 +73,35 @@ export default {
   .content {
     flex-direction: column;
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1020px) {
     .subject {
-      width: 60%;
+      width: 70%;
     }
   }
-  .h1 {
-    font-size: large;
+}
+@media screen and (max-width: 1000px) {
+  .subject {
+    width: 60%;
   }
-  .icon {
-    width: 30;
-  }
-  .p {
-    width: 160%;
-    font-size: smaller;
-  }
-  .card {
-    padding: 10px 11px;
-    width: 100%;
-  }
-  .pharag {
-    font-size: smaller;
-  }
+}
+
+.icon {
+  width: 30;
+}
+.p {
+  width: 160%;
+  font-size: smaller;
+}
+.card {
+  padding: 10px 11px;
+  width: 100%;
+}
+.pharag {
+  font-size: smaller;
+}
+.title {
+  width: 130%;
+}
+@media screen and (max-width: 830px) {
 }
 </style>

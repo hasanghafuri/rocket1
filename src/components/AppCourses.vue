@@ -143,27 +143,37 @@ export default {
     font-size: x-large;
   }
   .cards {
-    width: 55%;
-  }
-  @media screen and (max-width: 1000px) {
-    .h1 {
-      font-size: large;
-    }
-  }
-  .cards {
-    width: 70%;
-  }
-  .p {
-    font-size: medium;
-  }
-  .icon {
-    width: 30;
+    width: 45%;
   }
   .content {
-    width: 60%;
+    width: 80%;
   }
   #main:before {
-    top: 192px;
+    top: 215px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .subtitle {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #main:before {
+    top: 167px;
+  }
+  .content {
+    margin-right: 150px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .h1 {
+    font-size: large;
+  }
+  .p {
+    font-size: smaller;
+  }
+  #main:before {
+    top: 167px;
   }
 }
 </style>

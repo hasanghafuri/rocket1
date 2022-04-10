@@ -95,15 +95,6 @@ export default {
   @apply text-blue-500 opacity-80 hover:text-black transition-colors font-bold cursor-pointer py-5  w-full;
 }
 @media screen and (max-width: 1290px) {
-  .content {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    margin-top: 50px;
-  }
-  .cards {
-    width: 50%;
-  }
 }
 @media screen and (max-width: 1290px) {
   .cards {
@@ -120,25 +111,46 @@ export default {
     font-size: x-large;
   }
 }
-@media screen and (max-width: 1000px) {
-  .subtitle {
-    margin-left: 8rem;
-    margin-right: 9rem;
-  }
-  .icon {
-    width: 30;
-  }
-  .h1 {
-    font-size: large;
-  }
-  .p {
-    font-size: medium;
-  }
+@media screen and (max-width: 1020px) {
   .cards {
-    width: 70%;
+    width: 100%;
   }
   .content {
-    width: 65%;
+    width: 70%;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .subtitle {
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .subtitle {
+    margin-left: 0px;
+    margin-right: 9rem;
+  }
+  .content {
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+    margin-top: 50px;
+    width: 60%;
+  }
+  .cards {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .h1 {
+    font-size: larger;
+  }
+  .p {
+    font-size: smaller;
+  }
+  .content {
+    margin-right: 210px;
   }
 }
 </style>

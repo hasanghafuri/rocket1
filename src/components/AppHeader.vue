@@ -145,22 +145,51 @@ export default {
     font-size: small;
   }
 }
-@media screen and (max-width: 1000px) {
-  .AppHeader_search {
-    flex-direction: column;
-    height: 180px;
-  }
-  .AppHeader_SearchBox {
-    margin-top: 5px;
-  }
-  .AppHeader--Login {
-    margin-top: 10px;
+@media screen and (max-width: 1020px) {
+  .Logo {
+    width: 150px;
   }
   .AppHeader_menu {
-    margin: 0px 15px;
+    margin: 0px 18px;
   }
   .Menu_list {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Logo {
+    width: 150px;
+  }
+  .AppHeader_SearchBox {
+    width: 39%;
+  }
+  .AppHeader--Login {
+    margin-left: 10px;
+  }
+
+  .Menu_list {
     gap: 1.25rem;
+  }
+  .AppHeader_menu {
+    margin: 0px 16px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .AppHeader_search {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 20%;
+  }
+  .Logo {
+    width: 150px;
+  }
+  .AppHeader_SearchBox {
+    width: 70%;
+  }
+  .AppHeader_menu {
+    width: 92%;
+    margin: 0px 15px;
   }
 }
 </style>

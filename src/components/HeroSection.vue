@@ -111,6 +111,20 @@ export default {
     font-size: small;
   }
 }
+@media screen and (max-width: 1020px) {
+  .title {
+    font-size: x-large;
+    width: 155%;
+  }
+  .btn {
+    margin-left: 80px;
+    padding: 5px 5px;
+  }
+}
+.content_footer {
+  margin-right: 55px;
+}
+
 @media screen and (max-width: 1000px) {
   .title {
     font-size: x-large;
@@ -131,6 +145,11 @@ export default {
   }
   .content_footer {
     margin-right: 27px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .image {
+    width: 80%;
   }
 }
 </style>

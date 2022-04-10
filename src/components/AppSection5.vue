@@ -122,12 +122,12 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 255px);
     position: absolute;
-    right: 330px;
+    right: 532px;
     top: -250px;
     gap: 8px;
   }
   .content {
-    width: 82%;
+    width: 87%;
   }
   .bbb {
     margin-right: 68px;
@@ -135,16 +135,30 @@ export default {
 }
 @media screen and (max-width: 1200px) {
   .box {
-    display: grid;
-    grid-template-columns: repeat(2, 250px);
-    position: absolute;
-    right: 365px;
-    top: -250px;
-    gap: 8px;
+    grid-template-columns: 1fr 1fr;
+    position: static;
+    gap: 32px;
   }
   .content {
-    margin: 30% 0%;
-    margin-top: 360px;
+    margin: 32px auto;
+  }
+
+  .cards {
+    margin-bottom: 0;
+    margin-top: 0;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .content {
+    margin-top: 140px;
+    padding: 20px 20px;
+  }
+  .pharag {
+    width: 100%;
+  }
+  .btn {
+    padding: 5px 0px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -157,7 +171,23 @@ export default {
   .pharag {
     font-size: smaller;
   }
-  @media screen and (max-width: 1000px) {
+}
+@media screen and (max-width: 1000px) {
+  .content {
+    width: 80%;
+  }
+  .cards {
+    max-width: 90%;
+  }
+  .box {
+    gap: 17px;
+    margin-right: 88px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .box {
+    grid-template-columns: 1fr;
   }
 }
 </style>
