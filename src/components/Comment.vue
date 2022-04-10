@@ -102,6 +102,21 @@ export default {
 .title {
   width: 130%;
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 750px) {
+  .title {
+    width: 160%;
+    font-size: x-large;
+  }
+  .p {
+    width: 224%;
+    font-size: large;
+  }
+  .card {
+    width: 150%;
+    padding: 0px 20px;
+  }
+  .pharag {
+    font-size: medium;
+  }
 }
 </style>

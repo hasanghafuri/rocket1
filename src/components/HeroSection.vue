@@ -8,7 +8,7 @@
         یادگیری برنامه‌نویسی آرزو نیست، فقط نیاز هست، تلاش و تمرین داشته باشید،
         بقیه‌اش با راکت
       </p>
-      <span>
+      <span class="btn1">
         <router-link
           class="btn bg-blue-500 hover:bg-gray-400 transition-colors cursor-pointer text-center px-4 py-4 text-white rounded-lg w-2/4"
           to="/HeroSectionRedirect"
@@ -150,6 +150,35 @@ export default {
 @media screen and (max-width: 830px) {
   .image {
     width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .herosection_content {
+    flex-direction: column-reverse;
+    width: 90%;
+    margin-top: 50px;
+    margin-right: 35px;
+  }
+  .content {
+    margin-right: 86px;
+  }
+  .title {
+    font-size: xx-large;
+    font-weight: bold;
+    width: 176%;
+  }
+  .pharag {
+    font-size: larger;
+    width: 150%;
+  }
+  .btn1 {
+    width: 200%;
+  }
+  .footer1 {
+    font-size: large;
+  }
+  .footer2 {
+    font-size: large;
   }
 }
 </style>

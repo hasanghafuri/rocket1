@@ -184,6 +184,26 @@ export default {
     margin-right: 88px;
   }
 }
+@media screen and (max-width: 750px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-right: 40px;
+  }
+  .title {
+    font-size: x-large;
+    width: 62%;
+  }
+  .pharag {
+    font-size: medium;
+  }
+  .box {
+    width: 100%;
+    margin-right: 60px;
+  }
+}
 
 @media screen and (max-width: 640px) {
   .box {

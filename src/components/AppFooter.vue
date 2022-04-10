@@ -207,4 +207,44 @@ export default {
     width: 80%;
   }
 }
+@media screen and (max-width: 750px) {
+  .headfooter {
+    margin-left: -1rem;
+    margin-right: 7rem;
+    gap: 7rem;
+  }
+  .footer_adderes {
+    background-color: rgb(236 237 240);
+    border: 1px solid;
+    border-color: rgb(236 237 240);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 102px;
+    border-radius: 10px;
+  }
+  .about {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+  }
+  .footer_sections_site {
+    margin-top: 45px;
+    display: flex;
+    gap: 0px;
+  }
+  .footer_contactUs {
+    margin-top: 62px;
+    display: flex;
+    flex-direction: column;
+    margin-right: -178px;
+  }
+  .footer-number {
+    margin-top: -145px;
+    margin-left: -267px;
+  }
+}
 </style>

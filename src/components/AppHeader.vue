@@ -18,6 +18,13 @@
         <router-link class="btn1" to="/login"> ورود</router-link>
         <router-link class="btn2" to="/signin">عضویت</router-link>
       </div>
+      <div class="menu_hamber">
+        <div class="ham">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
     </div>
     <div class="AppHeader_menu">
       <ul class="Menu_list">
@@ -127,6 +134,19 @@ export default {
 .BackDrop {
   @apply w-full h-full fixed transition-opacity top-0 left-0 right-0 bottom-0 bg-gray-700  backdrop-filter isolate  z-30 opacity-70;
 }
+
+.menu_hamber {
+  display: none;
+  position: absolute;
+}
+.menu_hamber .line {
+  width: 40px;
+  height: 8px;
+  border-radius: 6px;
+  background: orange;
+
+  margin-bottom: 4px;
+}
 @media screen and (max-width: 1601px) {
   .AppHeader_search {
     width: 97%;
@@ -177,19 +197,26 @@ export default {
 @media screen and (max-width: 750px) {
   .AppHeader_search {
     display: flex;
-    flex-direction: column;
+    width: 100%;
     gap: 5px;
-    height: 20%;
+    height: 8rem;
   }
   .Logo {
     width: 150px;
+    margin-right: 150px;
   }
   .AppHeader_SearchBox {
-    width: 70%;
+    display: none;
   }
   .AppHeader_menu {
     width: 92%;
     margin: 0px 15px;
+  }
+  .menu_hamber {
+    display: block;
+  }
+  .AppHeader_menu {
+    display: none;
   }
 }
 </style>

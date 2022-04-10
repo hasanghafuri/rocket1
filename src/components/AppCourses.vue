@@ -176,4 +176,15 @@ export default {
     top: 167px;
   }
 }
+@media screen and (max-width: 750px) {
+  .h1 {
+    font-size: x-large;
+  }
+  .p {
+    font-size: large;
+  }
+  #main:before {
+    top: 143px;
+  }
+}
 </style>

@@ -153,4 +153,12 @@ export default {
     margin-right: 210px;
   }
 }
+@media screen and (max-width: 750px) {
+  .h1 {
+    font-size: x-large;
+  }
+  .p {
+    font-size: medium;
+  }
+}
 </style>
