@@ -55,7 +55,7 @@
           >
 
           <a
-            class="pharag hover:text-black hover:opacity-90 opacity-50 transition-all"
+            class="pharag3 hover:text-black hover:opacity-90 opacity-50 transition-all"
             href=""
             >ارتباط با ما</a
           >
@@ -240,11 +240,11 @@ export default {
     margin-top: 62px;
     display: flex;
     flex-direction: column;
-    margin-right: -178px;
+    margin-right: -160px;
   }
   .footer-number {
     margin-top: -145px;
-    margin-left: -267px;
+    margin-left: -154px;
   }
 }
 </style>

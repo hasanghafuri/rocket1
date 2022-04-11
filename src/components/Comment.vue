@@ -8,14 +8,10 @@
             در مورد راکت چه میشنویم؟
           </h1>
         </div>
-        <p class="p opacity-50 pt-7">
+        <p class="subtitle">
           این‌ها، بخش خیلی کوچکی از نظراتی هستند که افراد مختلف در مورد راکت
           دارند.
         </p>
-        <div class="flex mt-6 gap-4">
-          <span class="cursor-pointer"> <section4_icon1 /> </span>
-          <span class="cursor-pointer"> <section4_icon2 /> </span>
-        </div>
       </div>
       <div class="card">
         <p class="pharag text-lg opacity-50 pt-10">
@@ -54,15 +50,18 @@ export default {
 .title {
   @apply flex;
 }
+.subtitle {
+  @apply text-center text-lg opacity-50;
+}
 .card {
-  @apply w-1/2 bg-white py-10 px-10 text-center rounded-xl -mt-16;
+  @apply w-1/2 bg-white py-20 px-10 text-center rounded-xl -mt-16;
 }
 @media screen and (max-width: 1100px) {
   .h1 {
     font-size: x-large;
     font-weight: 600;
   }
-  .p {
+  .subtitle {
     text-align: center;
     width: 167%;
   }
@@ -73,10 +72,11 @@ export default {
   .content {
     flex-direction: column;
   }
-  @media screen and (max-width: 1020px) {
-    .subject {
-      width: 70%;
-    }
+}
+
+@media screen and (max-width: 1020px) {
+  .subject {
+    width: 70%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -88,7 +88,7 @@ export default {
 .icon {
   width: 30;
 }
-.p {
+.subtitle {
   width: 160%;
   font-size: smaller;
 }
@@ -107,7 +107,7 @@ export default {
     width: 160%;
     font-size: x-large;
   }
-  .p {
+  .subtitle {
     width: 224%;
     font-size: large;
   }

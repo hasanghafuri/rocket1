@@ -27,7 +27,7 @@ input {
 }
 .container {
   max-width: 1024px;
-  margin: 0px 150px;
+  margin: 0px 250px;
 }
 @media screen and (max-width: 1601px) {
   .container {

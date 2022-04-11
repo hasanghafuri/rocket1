@@ -1,7 +1,14 @@
 <template>
   <div class="full">
     <div @click="closedrop" v-show="showdrop" class="BackDrop"></div>
+    <div
+      v-show="backfalse"
+      @click="offbackdrop"
+      class="BackdropMenuHamber"
+    ></div>
+    <MenuHamberSidebar :hamberside="hamberside" @closemenu="closemune" />
     <div class="AppHeader_search">
+      <MenuHamber @trueback="trueback" />
       <router-link to="/">
         <Logo class="Logo" />
       </router-link>
@@ -17,13 +24,6 @@
       <div class="AppHeader--Login">
         <router-link class="btn1" to="/login"> ورود</router-link>
         <router-link class="btn2" to="/signin">عضویت</router-link>
-      </div>
-      <div class="menu_hamber">
-        <div class="ham">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
       </div>
     </div>
     <div class="AppHeader_menu">
@@ -53,6 +53,8 @@ import Logo from "./Logo.vue";
 import LogoSearch from "./LogoSearch.vue";
 import AppHeaderPopAboutUs from "./AppHeaderPopAboutUs.vue";
 import AppHeaderPopupCourse from "./AppHeaderPopupCourse.vue";
+import MenuHamber from "./MenuHamber.vue";
+import MenuHamberSidebar from "./MenuHamberSidebar.vue";
 export default {
   name: "AppHeader",
   components: {
@@ -60,12 +62,16 @@ export default {
     LogoSearch,
     AppHeaderPopAboutUs,
     AppHeaderPopupCourse,
+    MenuHamber,
+    MenuHamberSidebar,
   },
   data() {
     return {
       showdrop: false,
       open: false,
       openpop: false,
+      backfalse: false,
+      hamberside: false,
     };
   },
 
@@ -88,6 +94,18 @@ export default {
     closed() {
       this.openpop = false;
     },
+    offbackdrop() {
+      this.backfalse = false;
+      this.hamberside = false;
+    },
+    trueback() {
+      this.backfalse = true;
+      this.hamberside = true;
+    },
+    closemune() {
+      this.hamberside = false;
+      this.backfalse = false;
+    },
   },
 };
 </script>
@@ -97,7 +115,7 @@ export default {
 }
 
 .AppHeader_search {
-  @apply flex justify-between w-full  bg-white mt-3 rounded-xl h-36 items-center px-5 py-5;
+  @apply flex justify-between w-11/12  bg-white mt-3 rounded-xl h-36 items-center px-5 py-5;
 }
 .AppHeader_SearchBox {
   @apply w-2/4 relative;
@@ -120,7 +138,7 @@ export default {
   @apply bg-blue-500 text-white text-center px-3 py-2 w-20 outline-none rounded-lg cursor-pointer hover:bg-opacity-70;
 }
 .AppHeader_menu {
-  @apply bg-gray-300 py-5 px-6  w-11/12  h-20  rounded-br-xl rounded-bl-xl mr-16;
+  @apply bg-gray-300 py-5 px-6  w-5/6  h-20  rounded-br-xl rounded-bl-xl mr-16;
 }
 .Menu_list {
   @apply list-none flex items-center text-center justify-center gap-9 text-black opacity-80 transition-all;
@@ -134,19 +152,10 @@ export default {
 .BackDrop {
   @apply w-full h-full fixed transition-opacity top-0 left-0 right-0 bottom-0 bg-gray-700  backdrop-filter isolate  z-30 opacity-70;
 }
-
-.menu_hamber {
-  display: none;
-  position: absolute;
+.BackdropMenuHamber {
+  @apply w-full h-full fixed transition-opacity top-0 left-0 right-0 bottom-0 bg-gray-800  backdrop-filter isolate  z-20 opacity-50  hidden;
 }
-.menu_hamber .line {
-  width: 40px;
-  height: 8px;
-  border-radius: 6px;
-  background: orange;
 
-  margin-bottom: 4px;
-}
 @media screen and (max-width: 1601px) {
   .AppHeader_search {
     width: 97%;
@@ -203,7 +212,7 @@ export default {
   }
   .Logo {
     width: 150px;
-    margin-right: 150px;
+    margin-right: 30px;
   }
   .AppHeader_SearchBox {
     display: none;
@@ -212,11 +221,12 @@ export default {
     width: 92%;
     margin: 0px 15px;
   }
-  .menu_hamber {
-    display: block;
-  }
+
   .AppHeader_menu {
     display: none;
+  }
+  .BackdropMenuHamber {
+    display: block;
   }
 }
 </style>
