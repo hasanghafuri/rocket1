@@ -36,10 +36,12 @@
 </template>
 <script>
 import AppCoursesIcon from "./AppCoursesIcon.vue";
+import AppSection3_icon from "./AppSection3_icon.vue";
 export default {
   name: "AppLearning",
   components: {
     AppCoursesIcon,
+    AppSection3_icon,
   },
   props: {
     cards: {

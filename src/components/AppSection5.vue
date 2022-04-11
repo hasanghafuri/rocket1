@@ -30,12 +30,8 @@
           </div>
           <div class="footer">
             <div class="flex justify-between">
-              <button class="btn1">
-                <section5_icon1 />
-              </button>
-              <button class="btn2">
-                <section5_icon2 />
-              </button>
+              <button class="btn1"></button>
+              <button class="btn2"></button>
             </div>
             <span class="opacity-50">زمان مطاله:۱:۲۰:۴۰</span>
           </div>
