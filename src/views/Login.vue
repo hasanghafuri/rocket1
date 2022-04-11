@@ -91,9 +91,9 @@
         <button
           @click="submit"
           :disabled="$v.$invalid"
-          class="mt-4 bg-gray-400 text-white p-3 rounded-lg hover:text-white"
+          class="mt-4 bg-gray-400 text-white p-3 px-4 w-64 text-center bg-blue-500 cursor-pointer rounded-lg hover:text-white"
         >
-          submit
+          ورود
         </button>
       </div>
     </div>
@@ -167,7 +167,7 @@ export default {
   @apply mx-40 mt-24;
 }
 .form {
-  @apply bg-white mt-28  py-10 px-10 mx-40 flex flex-col justify-center items-center rounded-xl;
+  @apply bg-white mt-16  py-10 px-10 mx-40 flex flex-col justify-center items-center rounded-xl;
 }
 .form {
   width: 30%;
@@ -182,7 +182,7 @@ export default {
   @apply px-3 w-28 rounded-lg font-bold text-white bg-blue-500 py-3 text-center;
 }
 .content {
-  @apply mb-8 flex flex-col justify-center items-center;
+  @apply mb-11 flex flex-col justify-center items-center;
 }
 .links {
   @apply bg-gray-100 mb-8 grid py-4 px-4 bg-opacity-20 rounded-lg;

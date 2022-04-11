@@ -22,7 +22,7 @@
         <LogoSearch class="absolute w-4 top-3 left-3" />
       </div>
       <div class="AppHeader--Login">
-        <router-link class="btn1" to="/login"> ورود</router-link>
+        <router-link class="btn1" to="/Login"> ورود</router-link>
         <router-link class="btn2" to="/signin">عضویت</router-link>
       </div>
     </div>
