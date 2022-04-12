@@ -181,4 +181,15 @@ export default {
     font-size: large;
   }
 }
+@media screen and (max-width: 500px) {
+  .footer1 {
+    flex-direction: column;
+  }
+  .footer2 {
+    flex-direction: column;
+  }
+  .btn {
+    padding: 15px;
+  }
+}
 </style>

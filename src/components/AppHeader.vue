@@ -229,4 +229,14 @@ export default {
     display: block;
   }
 }
+@media screen and (max-width: 720px) {
+  .AppHeader_search {
+    width: 110%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .AppHeader_search {
+    width: 105%;
+  }
+}
 </style>

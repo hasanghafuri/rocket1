@@ -187,4 +187,27 @@ export default {
     top: 143px;
   }
 }
+@media screen and (max-width: 720px) {
+  .cards {
+    width: 87%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .subtitle {
+    margin-right: 7rem;
+  }
+  .h1 {
+    font-size: larger;
+  }
+  .cards {
+    width: 100%;
+  }
+  .content {
+    margin-right: 120px;
+    width: 76%;
+  }
+  #main:before {
+    top: 212px;
+  }
+}
 </style>

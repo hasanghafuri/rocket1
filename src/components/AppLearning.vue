@@ -96,8 +96,7 @@ export default {
 .footer {
   @apply text-blue-500 opacity-80 hover:text-black transition-colors font-bold cursor-pointer py-5  w-full;
 }
-@media screen and (max-width: 1290px) {
-}
+
 @media screen and (max-width: 1290px) {
   .cards {
     width: 40%;
@@ -161,6 +160,29 @@ export default {
   }
   .p {
     font-size: medium;
+  }
+}
+@media screen and (max-width: 720px) {
+  .cards {
+    width: 134%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .subtitle {
+    gap: 14px;
+  }
+  .h1 {
+    font-size: larger;
+  }
+  .p {
+    font-size: smaller;
+  }
+  .cards {
+    width: 100%;
+  }
+  .content {
+    margin-right: 120px;
+    width: 76%;
   }
 }
 </style>

@@ -200,10 +200,24 @@ export default {
     margin-right: 60px;
   }
 }
+@media screen and (max-width: 720px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 640px) {
   .box {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content {
+    width: 91%;
+  }
+  .box {
+    width: 95%;
   }
 }
 </style>

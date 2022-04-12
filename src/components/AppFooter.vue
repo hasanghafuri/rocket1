@@ -247,4 +247,12 @@ export default {
     margin-left: -154px;
   }
 }
+@media screen and (max-width: 500px) {
+  .virtual {
+    margin-left: 108px;
+  }
+  .footer_adderes {
+    width: 81%;
+  }
+}
 </style>

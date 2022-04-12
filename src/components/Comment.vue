@@ -119,4 +119,19 @@ export default {
     font-size: medium;
   }
 }
+@media screen and (max-width: 500px) {
+  .title {
+    width: 220%;
+    margin-bottom: 16px;
+    margin-right: 19px;
+  }
+  .content {
+    width: 50%;
+    margin-right: 7rem;
+  }
+  .card {
+    width: 155%;
+    margin-top: 20px;
+  }
+}
 </style>

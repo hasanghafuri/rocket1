@@ -34,4 +34,19 @@ input {
     margin: 0px 0px;
   }
 }
+@media screen and (max-width: 720px) {
+  .container {
+    margin: 0px -50px;
+  }
+}
+@media screen and (max-width: 674px) {
+  .container {
+    margin: 0px -77px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    margin: 0px -94px;
+  }
+}
 </style>
