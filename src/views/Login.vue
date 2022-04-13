@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="cont flex flex-col justify-center items-center">
     <div class="logo">
       <span class="cursor-pointer">
         <router-link to="/"> <Logo /> </router-link
@@ -44,7 +44,7 @@
           v-model.trim="$v.firstName.$model"
         />
         <template v-if="$v.firstName.$error">
-          <span v-if="!$v.firstName.required">ok</span>
+          <span v-if="!$v.firstName.required">لطفا نام خود را وارد کنید</span>
         </template>
       </div>
       <div class="input1 flex flex-col mt-3">
@@ -167,11 +167,9 @@ export default {
   @apply mx-40 mt-24;
 }
 .form {
-  @apply bg-white mt-16  py-10 px-10 mx-40 flex flex-col justify-center items-center rounded-xl;
+  @apply bg-white mt-10  py-12 px-12  flex flex-col justify-center items-center rounded-xl;
 }
-.form {
-  width: 30%;
-}
+
 .login {
   @apply items-center justify-center flex  gap-2 mb-5;
 }
