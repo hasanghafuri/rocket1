@@ -41,6 +41,15 @@ export default {
 </script>
 <style scoped>
 .menu {
-  @apply w-8 h-1 bg-black;
+  @apply w-10 h-1 bg-black;
+}
+.parent {
+  position: absolute;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.parent:hover {
+  transform: rotate(90deg);
 }
 </style>

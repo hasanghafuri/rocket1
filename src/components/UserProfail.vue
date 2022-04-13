@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-show="open" class="admin fixed w-96 right-0 bg-gray-700 h-full mt-8">
+    <div v-show="open" class="admin">
       <img
         @click="closesidbar"
         src="@/assets/image/close.png"
@@ -50,3 +50,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.admin {
+  @apply transition-all duration-700 delay-300 fixed w-96 right-0 bg-gray-700 h-full mt-8;
+}
+</style>
