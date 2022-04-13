@@ -74,7 +74,7 @@
           type="email"
         />
       </div>
-      <div class="input2 flex flex-col">
+      <div class="input1 flex flex-col">
         <label class="label"> پسورد</label>
         <input
           @input="$v.password.$touch()"
@@ -226,5 +226,66 @@ h3:after {
 }
 .is-valid {
   @apply border-green-500 border-2;
+}
+@media screen and (max-width: 670px) {
+  .cont {
+    margin-right: 110px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .form {
+    width: 100%;
+  }
+  .content {
+    gap: 20px;
+    margin-top: 10px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .h3:before {
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    top: 13px;
+    left: 132px;
+    opacity: 0.5;
+  }
+  .h3:after {
+    content: "";
+    width: 54%;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    top: 13px;
+    right: 132px;
+    opacity: 0.5;
+  }
+  .input1 {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cont {
+    margin-right: 200px;
+  }
+  .form {
+    width: 145%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .cont {
+    margin-right: 189px;
+  }
+  .form {
+    width: 173%;
+  }
 }
 </style>
