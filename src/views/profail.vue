@@ -2,7 +2,7 @@
   <div>
     <div
       @click="opensidbar"
-      v-if="show"
+      v-show="show"
       class="parent flex gap-2 flex-col mr-0"
     >
       <span class="menu"></span>

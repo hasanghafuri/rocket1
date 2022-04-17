@@ -41,7 +41,10 @@ export default {
     };
   },
   mounted() {
-    this.user = JSON.parse(localStorage.getItem("user"));
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    const users = JSON.parse(localStorage.getItem("users"));
+
+    this.user = users.find((user) => user.password === currentUser.password);
   },
   methods: {
     closesidbar() {

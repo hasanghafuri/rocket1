@@ -52,10 +52,13 @@
         />
       </div>
       <button
+        @click="submit"
+        :disabled="$v.$invalid"
         class="mt-4 bg-gray-400 text-white p-3 px-4 w-64 text-center bg-blue-500 cursor-pointer rounded-lg hover:text-white"
       >
         ورود
       </button>
+      <p v-show="off" class="text-red-400 mt-4">اطلاعات وارد شده اشتباه است</p>
     </div>
   </div>
 </template>
@@ -72,8 +75,7 @@ export default {
       type: "password",
       email: "",
       password: "",
-      firstName: "",
-      lastName: "",
+      off: false,
     };
   },
   validations: {
@@ -84,6 +86,28 @@ export default {
     password: {
       required,
       minLength: minLength(8),
+    },
+  },
+  methods: {
+    submit() {
+      this.$v.$touch();
+      if (this.$v.$invalid) {
+        return;
+      }
+
+      const currentUser = {
+        email: this.email,
+        password: this.password,
+      };
+
+      localStorage.setItem("currentUser", JSON.stringify(currentUser));
+      const users = JSON.parse(localStorage.getItem("users"));
+      const foundUser = users.find(
+        (user) => user.password === currentUser.password
+      );
+      if (foundUser) {
+        this.$router.push("/profail");
+      } else this.off = true;
     },
   },
 };

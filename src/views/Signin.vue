@@ -148,16 +148,20 @@ export default {
       if (this.$v.$invalid) {
         return;
       }
-      const users = localStorage.getItem("users")
-        ? JSON.parse(localStorage.getItem("users"))
-        : [];
-      users.push({
+      const currentUser = {
         email: this.email,
         password: this.password,
         lastName: this.lastName,
         firstName: this.firstName,
-      });
+      };
+
+      const users = localStorage.getItem("users")
+        ? JSON.parse(localStorage.getItem("users"))
+        : [];
+      users.push(currentUser);
+
       localStorage.setItem("users", JSON.stringify(users));
+      localStorage.setItem("currentUser", JSON.stringify(currentUser));
       this.$router.push("/profail");
     },
   },
